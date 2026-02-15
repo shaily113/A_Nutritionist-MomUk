@@ -155,7 +155,7 @@
     const { error } = await supabaseClient.auth.signInWithOtp({
       email,
       options: {
-        emailRedirectTo: window.location.origin + "/verify.html",
+        emailRedirectTo: "https://anutritionistmom.vercel.app/zverify.html",
         shouldCreateUser: true
       }
     });
